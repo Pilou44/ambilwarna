@@ -1,14 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion propCompileSdkVersion
-    buildToolsVersion propBuildToolsVersion
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
 
     defaultConfig {
-        minSdkVersion propMinSdkVersion
-        targetSdkVersion propTargetSdkVersion
-        versionCode propVersionCode
-        versionName propVersionName
+        minSdkVersion 10
+        targetSdkVersion 10
     }
     buildTypes {
         release {
@@ -18,4 +16,3 @@ android {
     }
 }
 
-apply from: '../android-mvn-push.gradle'
